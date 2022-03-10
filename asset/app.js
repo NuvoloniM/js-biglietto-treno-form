@@ -6,13 +6,27 @@ let ageInput = document.getElementById('age');
 // variabile per selezionare il bottone submit
 let submitBtn = document.getElementById('button');
 
-//seleziono il div del biglietto
-let biglietto = document.getElementById('biglietto');
+//seleziono i div del biglietto
+//nome passeggero
+let passenger = document.getElementById('passenger');
+//promozione
+let promo = document.getElementById('promo');
+//carrozza 
+let cab = document.getElementById('cab');
+//codice CP
+let code = document.getElementById('code');
+//prezzo biglietto
+let price = document.getElementById('price');
 
 // calcolo il prezzo base del biglietto dati i chilometri
 let tax = 0.21;
 let total = tax * distanceInput.value;
 
+//numeri casuali per la carrozza del treno (tra 1 e 9)
+let randCab = Math.floor(Math.random()*9) + 1;
+
+//numeri casuali per il Codice CP
+let randCP = Math.floor(Math.random()*99999) + 1;
 
 //creo evento ' al click calcolo prezzo'
 submitBtn.addEventListener('click', calcPrice);
@@ -24,7 +38,9 @@ submitBtn.addEventListener('click', saveData);
 
 //creo funzione per stampare il biglietto coi dati
 function saveData() {
-   biglietto.innerHTML += `<p> ${nameInput.value} </p> <p> ${distanceInput.value} </p>`;
+    passenger.innerHTML = `${nameInput.value}`;
+    cab.innerHTML = `${randCab}`;
+    code.innerHTML = `${randCP}`
 }
 
 //creo funzione per calcolare il prezzo del biglietto
