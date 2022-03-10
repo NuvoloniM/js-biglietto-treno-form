@@ -9,22 +9,94 @@
     <title>Biglietteria Boolean Railroads</title>
 </head>
 <body>
-    <header></header>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" id="main_logo" href="#">Boolean Railroads</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Carrello
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Le Mie Prenotazioni
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Registrati
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Action</a></li>
+                      <li><a class="dropdown-item" href="#">Another action</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                  <button class="btn btn-outline-success" type="submit">Accedi</button>
+              </div>
+            </div>
+          </nav>
+    </header>
+
     <main>
-        <section>
-            <!--<form action="/action_page.php" method="get">   -->
-                    <label for="user_name">Nome e Cognome</label>
-                    <input type="text" id="user_name" name="name">
-                    <label for="distanza">Km da percorrere</label>
-                    <input type="number" id="distance" name="distanza" >
-                    <label for="age">Fascia di età</label>
-                    <select type="select" name="age" id="age">
-                        <option value="minorenne">Minorenne</option>
-                        <option value="maggiorenne">Maggiorenne</option>
-                        <option value="over65">Over65</option>
-                    </select>
-                    <input type="submit" name="submit" id="button">
-            <!-- </form> -->
+        <section class="hero">
+            <div class="container">
+                <h1 class="text-white text-center py-5 mx-5">Calcola il Prezzo del Tuo biglietto in modo Facile e Veloce</h1>   
+            </div>   
+        </section>
+
+        <section class="calc py-3">
+            <div class="container">
+                <div class="row text-center justify-content-between bg-light rounded py-3">
+                    <!--<form action="/action_page.php" method="get">   -->
+                    <div class="col-4">
+                        <label for="user_name">Nome e Cognome</label><br>
+                        <input type="text" id="user_name" name="name" class="my-2">
+                    </div>
+                    <div class="col-4"> 
+                        <label for="distanza">Km da percorrere</label><br>
+                        <input type="number" id="distance" name="distanza" class="my-2">
+                    </div>
+                    <div class="col-4">
+                        <label for="age">Fascia di età</label><br>
+                        <select type="select" name="age" id="age" class="my-2">
+                            <option value="minorenne">Minorenne</option>
+                            <option value="maggiorenne">Maggiorenne</option>
+                            <option value="over65">Over65</option>
+                        </select>
+                    </div>
+                    <div class="row py-3">
+                        <div class="col-6 text-end">
+                            <button class="btn btn-dark" id="button">Calcola</button>
+                        </div>
+                        <div class="col-6 text-start">
+                            <button class="btn btn-dark" id="remove">Annulla</button>
+                        </div>
+                    </div>
+                        
+                    <!-- </form> -->
+                </div>
+            </div>
         </section>
         <section>
             <div id="biglietto"></div>
