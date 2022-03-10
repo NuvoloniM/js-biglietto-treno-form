@@ -35,6 +35,9 @@ let randCP = Math.floor(Math.random()*99999) + 1;
 //selezione il biglietto
 let ticket = document.getElementById('ticket');
 
+
+
+
 //creo evento ' al click calcolo prezzo'
 submitBtn.addEventListener('click', calcPrice);
 
