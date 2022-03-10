@@ -23,7 +23,7 @@ header {
 /* Main */
 .hero {
   margin-top: 60px;
-  height: 50vh;
+  height: 40vh;
   background-image: url(./img/trenitalia_hero_2x.jpg);
   background-position: top center;
   background-repeat: no-repeat;
@@ -36,6 +36,15 @@ header {
 }
 
 .calc {
-  height: calc(50vh - 60px);
+  height: calc(60vh - 60px);
   background-color: green;
+}
+
+.ticket {
+  border-top: 1px solid gray;
+  border-bottom: 1px solid gray;
+}
+
+.bg_gray {
+  background-color: gray;
 }
