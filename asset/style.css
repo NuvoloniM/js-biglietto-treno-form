@@ -3,6 +3,7 @@
 /* General  */
 body {
   font-family: "Lato", sans-serif;
+  background-color: green;
 }
 
 /* Header */
@@ -22,8 +23,8 @@ header {
 
 /* Main */
 .hero {
-  margin-top: 60px;
-  height: 40vh;
+  margin-top: 40px;
+  height: 50vh;
   background-image: url(./img/trenitalia_hero_2x.jpg);
   background-position: top center;
   background-repeat: no-repeat;
@@ -36,8 +37,16 @@ header {
 }
 
 .calc {
-  height: calc(60vh - 60px);
+  /* height: 60vh; */
   background-color: green;
+}
+
+.display {
+  display: none;
+}
+
+.d-block {
+  display: block;
 }
 
 .ticket {
