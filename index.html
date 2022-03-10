@@ -12,19 +12,22 @@
     <header></header>
     <main>
         <section>
-            <form action="">
-                <label for="user_name">Nome e Cognome</label>
-                <input type="text" id="user_name" name="name">
-                <label for="distanza">Km da percorrere</label>
-                <input type="number" id="distance" name="distanza" >
-                <label for="age">Fascia di età</label>
-                <select type="select" name="age" id="age">
-                    <option value="Minorenne">Minorenne</option>
-                    <option value="Maggiorenne">Maggiorenne</option>
-                    <option value="Over65">Over65</option>
-                </select>
-                <input type="submit" name="submit" id="button">
-            </form>
+            <!--<form action="/action_page.php" method="get">   -->
+                    <label for="user_name">Nome e Cognome</label>
+                    <input type="text" id="user_name" name="name">
+                    <label for="distanza">Km da percorrere</label>
+                    <input type="number" id="distance" name="distanza" >
+                    <label for="age">Fascia di età</label>
+                    <select type="select" name="age" id="age">
+                        <option value="minorenne">Minorenne</option>
+                        <option value="maggiorenne">Maggiorenne</option>
+                        <option value="over65">Over65</option>
+                    </select>
+                    <input type="submit" name="submit" id="button">
+            <!-- </form> -->
+        </section>
+        <section>
+            <div id="biglietto"></div>
         </section>
     </main>
     <script type="text/javascript" src="./asset/app.js"></script>
