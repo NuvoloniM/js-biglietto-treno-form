@@ -45,7 +45,7 @@ submitBtn.addEventListener('click', calcPrice);
 submitBtn.addEventListener('click', saveData);
 
 //stampo biglietto
-submitBtn.addEventListener('click', stamp);
+// submitBtn.addEventListener('click', stamp);
 
 //elimino il biglietto
 delBtn.addEventListener('click', del);
@@ -74,18 +74,21 @@ function saveData() {
     if (distanceInput.value <= 0 || nameInput.value === "") {
         alert ("Informazioni non valide, controlla e ripeti l'operazione");
     } else {
+        //scrivi i dati sul biglietto
         passenger.innerHTML = `${nameInput.value}`;
         promo.innerHTML = `${promotion}`;
         cab.innerHTML = `${randCab}`;
         code.innerHTML = `${randCP}`;
         price.innerHTML = `${total} &euro;`;  
+        // stampa il biglietto
+        ticket.className = "d_block";
     }
     
 }
 //funzione per stampare biglietto
-function stamp() {
-    ticket.className = "d_block";
-}
+// function stamp() {
+//     ticket.className = "d_block";
+// }
 
 //funzione per eliminare il biglietto 
 function del() {
