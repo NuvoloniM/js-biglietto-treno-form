@@ -71,13 +71,17 @@ function calcPrice() {
 
 //creo funzione per stampare il biglietto coi dati
 function saveData() {
-    passenger.innerHTML = `${nameInput.value}`;
-    promo.innerHTML = `${promotion}`;
-    cab.innerHTML = `${randCab}`;
-    code.innerHTML = `${randCP}`;
-    price.innerHTML = `${total} &euro;`;
+    if (distanceInput.value <= 0 || nameInput.value === "") {
+        alert ("Informazioni non valide, controlla e ripeti l'operazione");
+    } else {
+        passenger.innerHTML = `${nameInput.value}`;
+        promo.innerHTML = `${promotion}`;
+        cab.innerHTML = `${randCab}`;
+        code.innerHTML = `${randCP}`;
+        price.innerHTML = `${total} &euro;`;  
+    }
+    
 }
-
 //funzione per stampare biglietto
 function stamp() {
     ticket.className = "d_block";
